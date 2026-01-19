@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just For You ❤️</title>
+</head>
+<body>
+
+  <section class="intro">
+    <h1>Hi Chiku Piku ❤️</h1>
+    <p>
+      Again, not moon and stars<br>
+      But i tried something else.<br>
+      Just for my cutie.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <img src="https://picsum.photos/400?1" onclick="openMessage(0)">
+    <img src="https://picsum.photos/400?2" onclick="openMessage(1)">
+    <img src="https://picsum.photos/400?3" onclick="openMessage(2)">
+  </section>
+
+  <section class="question">
+    <h2>So…</h2>
+    <p>Will you be my Valentine? 💌</p>
+
+    <div class="buttons">
+      <button id="yesBtn" onclick="yes()">Yes ❤️</button>
+      <button id="noBtn" onclick="no()">No 🙃</button>
+    </div>
+  </section>
+
+  <!-- Popup messages -->
+  <div class="overlay" id="overlay">
+    <div class="message-box">
+      <p id="popup-text"></p>
+      <button onclick="closeMessage()">Close ✨</button>
+    </div>
+  </div>
+
+  <!-- Celebration -->
+  <div id="celebration">
+    <div class="big-heart">❤️</div>
+  </div>
+
+</body>
+</html>
